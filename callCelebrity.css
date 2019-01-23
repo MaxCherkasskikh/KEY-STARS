@@ -1,0 +1,89 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#callHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#callScreenContainer {
+    position: absolute;
+    height: 92%;
+    width: 96%;
+    top: 7%;
+    left: 2%;
+    border: 2px solid magenta;
+    border-radius: 5px;
+}
+
+#fanImageDiv {
+    position: absolute;
+    height: 70%;
+    width: 96%;
+    top: 1%;
+    left: 2%;
+    overflow: hidden;
+    border: 1px solid magenta;
+    border-radius: 3px;
+}
+
+#fanImage {
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    left: -22%;
+    transform: rotate(90deg);
+}
+
+#celebrityCallImageDiv {
+    position: absolute;
+    height: 28%;
+    width: 25%;
+    top: 0.7%;
+    left: 74%;
+    border: 0.5px solid magenta;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#celebrityCallImage {
+    position: absolute;
+    height: 150%;
+    top: -20%;
+    left: 0%;
+}
+
+#fanCallName {
+    position: absolute;
+    width: 100%;
+    top: 74%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#callDuration {
+    position: absolute;
+    width: 100%;
+    top: 81.5%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#endCallButton {
+    position: absolute;
+    height: 6%;
+    width: 50%;
+    top: 90%;
+    left: 25%;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* ---------------------- THE END ------------------------ */

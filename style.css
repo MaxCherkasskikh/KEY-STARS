@@ -1,0 +1,566 @@
+/* -------------------- GENERAL ---------------------- */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+a:link{
+    text-decoration: none!important;
+}
+
+li {
+    text-decoration: none!important;
+}
+
+li:link {
+    text-decoration: none!important;
+}
+
+textarea::-webkit-input-placeholder {
+    color: white;
+}
+
+textarea:-moz-placeholder {
+    color: white;
+}
+
+textarea::-moz-placeholder {
+    color: white;
+}
+
+textarea:-ms-input-placeholder {
+    color: white;
+}
+
+input {
+    color: white;
+    text-indent: 15px;
+}
+
+input::-webkit-input-placeholder {
+    color: white !important;
+    text-indent: 15px;
+}
+ 
+input:-moz-placeholder {
+    color: white !important;
+    text-indent: 15px;
+}
+ 
+input::-moz-placeholder {
+    color: white !important;
+    text-indent: 15px;
+}
+ 
+input:-ms-input-placeholder {  
+    color: white !important;
+    text-indent: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px white;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* ------------------- MENU --------------------- */
+
+#menuContainer {
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid magenta;
+    z-index: 1000;
+}
+
+#menuLogoContainer {
+    position: absolute;
+    height: 86%;
+    width: 9%;
+    top: 7%;
+    left: 1%;
+    border-radius: 100%;
+    border: 3px double magenta;
+}
+
+#menuLogoContainer.closed {
+    transform: rotateY(0deg);
+    transition: 0.5s;
+}
+
+#menuLogoContainer.open {
+    transform: rotateY(360deg);
+    transition: 0.5s;
+}
+
+#letterK {
+    position: absolute;
+    top: -11%;
+    left: 15%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+}
+
+#letterS {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+}
+
+#logoutLink {
+    position: absolute;
+    height: 80%;
+    width: 20%;
+    top: 10%;
+    left: 68%;
+    color: magenta;
+    padding-top: 1.3%;
+}
+
+#menuButton {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    left: 90%;
+}
+
+    #menuButton.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+        transition-delay: 0.1s;
+    }
+
+    #menuButton.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+        transition-delay: 0.1s;
+    }
+
+#menuLinkContainer {
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    top: 8%;
+    left: 0%;
+    z-index: 999;
+}
+
+    #menuLinkContainer.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 1.4s;
+    }
+
+    #menuLinkContainer.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 0.1s;
+    }
+
+#menuLink1 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink1.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 1.2s;
+    }
+
+    #menuLink1.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 0.4s;
+    }
+
+#menuLink2 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 14%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink2.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 1s;
+    }
+
+    #menuLink2.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 0.6s;
+    }
+
+#menuLink3 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 28%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink3.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 0.8s;
+    }
+
+    #menuLink3.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 0.8s;
+    }
+
+#menuLink4 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 42%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink4.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 0.6s;
+    }
+
+    #menuLink4.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 1s;
+    }
+
+#menuLink5 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 56%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink5.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 0.4s;
+    }
+
+    #menuLink5.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 1.2s;
+    }
+
+#menuLink6 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 70%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink6.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 0.2s;
+    }
+
+    #menuLink6.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 1.4s;
+    }
+
+#menuLink7 {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 84%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-left: 5%;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-decoration: none;
+    color: magenta;
+}
+
+    #menuLink7.closed {
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        transition: 0.3s;
+        transition-delay: 0s;
+    }
+
+    #menuLink7.open {
+        transform: rotateY(0deg);
+        transform-origin: left;
+        transition: 0.5s;
+        transition-delay: 1.6s;
+    }
+
+/* -------------------- HEADER DIV ---------------------- */
+
+#headerDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(IMAGES/newyork.jpg);
+    background-size: 400%;
+    background-position: 40%;
+    overflow: hidden;
+}
+
+#headerSignatureLogo {
+    position: absolute;
+    width: 100%;
+    top: 23%;
+    left: 0%;
+    color: magenta;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+    #headerSignatureLogo.open {
+        transform: rotateX(0deg);
+        transition: 0.2s;
+        transition-delay: 2s;
+    }
+
+    #headerSignatureLogo.closed {
+        transform: rotateX(90deg);
+        transition: 0.2s;
+        transition-delay: 0s;
+    }
+
+#secondaryHeadingBackdrop {
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    top: 45%;
+    left: 0%;
+    border-top: 0.1px solid magenta;
+    border-bottom: 0.1px solid magenta;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+    #secondaryHeadingBackdrop.open {
+        transform: rotateX(0deg);
+        transition: 0.2s;
+        transition-delay: 2s;
+    }
+
+    #secondaryHeadingBackdrop.closed {
+        transform: rotateX(90deg);
+        transition: 0.2s;
+        transition-delay: 0s;
+    }
+
+#headerSecondaryHeading {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-size: 0.95rem;
+    padding-top: 0.4rem;
+    text-shadow: 0.3px 0.3px 1px white;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 1;
+}
+
+#fanLinkDiv {
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    top: 60%;
+    left: 5%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#fanAreaImage {
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    top: 8%;
+    left: 20%;
+}
+
+#fanAreaText {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 10%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#fanAreaSignUpButton {
+    position: absolute;
+    height: 13%;
+    width: 60%;
+    top: 63%;
+    left: 20%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+}
+
+#fanAreaLogInButton {
+    position: absolute;
+    height: 13%;
+    width: 60%;
+    top: 80%;
+    left: 20%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+}
+
+#celebrityLinkDiv {
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    top: 60%;
+    left: 55%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#celebrityAreaImage {
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    top: 8%;
+    left: 20%;
+}
+
+#celebrityAreaText {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 10%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#celebrityAreaLogInButton {
+    position: absolute;
+    height: 13%;
+    width: 60%;
+    top: 63%;
+    left: 20%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+}
+
+/* -------------------- THE END ---------------------- */

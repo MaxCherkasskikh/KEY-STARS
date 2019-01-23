@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+    <head>
+        
+        <!-------------------------------- META DATA -------------------------------->
+        
+        <title>KEY STARS</title>
+
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable="yes">
+        
+        <!------------------------------- STYLE REFS ------------------------------->
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="queries.css">
+        
+        <link rel="stylesheet" href="fantemplate.css">
+        
+        <link rel="stylesheet" href="celebritytemplate.css">
+        
+        <link rel="stylesheet" href="calendartemplate.css">
+        
+        <link rel="stylesheet" href="biddingtemplate.css">
+        
+        <link rel="stylesheet" href="trending.css">
+        
+        <link rel="stylesheet" href="search.css">
+        
+        <link rel="stylesheet" href="notifications.css">
+        
+        <link rel="stylesheet" href="paynow.css">
+        
+        <link rel="stylesheet" href="settings.css">
+        
+        <link rel="stylesheet" href="contactus.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!------------------------------ SCRIPT REFS ------------------------------>
+        
+        <script type="text/javascript" src="jquery-3.2.1.js"></script>
+        
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        
+        <script src="fantemplate.js"></script>
+        
+        <script src="celebritytemplate.js"></script>
+        
+        <script src="calendartemplate.js"></script>
+        
+        <script src="biddingtemplate.js"></script>
+        
+        <script src="trending.js"></script>
+        
+        <script src="search.js"></script>
+        
+        <script src="paynow.js"></script>
+        
+        <script src="settings.js"></script>
+  
+    </head>
+    
+    <!-------------------------------------- BODY -------------------------------------->
+    
+    <body>
+    
+        <div id="line1"></div>
+        
+        <div id="line2"></div>
+        
+        <div id="line3"></div>
+        
+        <div id="line4"></div>
+        
+        <div id="line5"></div>
+        
+        <div id="line6"></div>
+        
+        <!--------------------------------- MENU ----------------------------------------->
+        
+        <div class="toggle-btn ">
+
+            <span class="one"></span>
+            
+            <span class="two"></span>
+
+        </div>
+
+        <div class="menu">
+
+            <div class="data">
+
+                <ul>
+
+                    <li><a class="menulinks" href="#">ABOUT US</a></li>
+
+                    <li><a class="menulinks" href="search.html">SEARCH CELEBRITIES</a></li>
+
+                    <li><a class="menulinks" href="biddingtemplate.html">BIDDING COMPETITIONS</a></li>
+                    
+                    <li><a class="menulinks" href="contactus.html">CONTACT US</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        
+        <!--------------------------------- HEADER ----------------------------------------->
+     
+        <div id="headerdiv">
+
+            <img id="headerbackground" src="IMAGES/newyork.jpg">
+
+            <h1 id="headerprimaryheading">KeyStars</h1>
+
+                <h2 id="headersecondaryheading">Bid, win and hop on a video call with your favorite stars!</h2>
+                
+                <div id="secondaryheadingbackdrop"></div>
+                
+                <button id="fanbutton" onclick="fanLogInOpen();">FAN</button>
+                
+                <button id="celebritybutton" onclick="celebrityLogInOpen();">CELEBRITY</button>
+                
+                <a href="search.html"><button id="celebritysearchbutton">SEARCH</button></a>
+
+            <div id="diamondcollage">
+
+                <div id="diamond1" class="collagediamonds">
+
+                    <img id="diamondpic1" class="diamondpics" src="IMAGES/kim1.jpg">
+                    
+                        <p id="firstname1">KIM</p>
+                        
+                        <p id="lastname1">KARDASHIAN</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond2" class="collagediamonds">
+
+                    <img id="diamondpic2" class="diamondpics" src="IMAGES/robert1.jpg">
+                    
+                        <p id="firstname2">ROBERT</p>
+                        
+                        <p id="lastname2">DOWNEY</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond3" class="collagediamonds">
+
+                    <img id="diamondpic3" class="diamondpics" src="IMAGES/chris1.jpg">
+                    
+                        <p id="firstname3">CHRIS</p>
+                        
+                        <p id="lastname3">HEMSWORTH</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond4" class="collagediamonds">
+
+                    <img id="diamondpic4" class="diamondpics" src="IMAGES/jennifer1.jpg">
+                    
+                        <p id="firstname4">JENNIFER</p>
+                        
+                        <p id="lastname4">LOPEZ</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond5" class="collagediamonds">
+
+                    <img id="diamondpic5" class="diamondpics" src="IMAGES/taylor1.jpg">
+                    
+                        <p id="firstname5">TAYLOR</p>
+                        
+                        <p id="lastname5">SWIFT</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond6" class="collagediamonds">
+
+                    <img id="diamondpic6" class="diamondpics" src="IMAGES/ariana1.jpg">
+                    
+                        <p id="firstname6">ARIANA</p>
+                        
+                        <p id="lastname6">GRANDE</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond7" class="collagediamonds">
+
+                    <img id="diamondpic7" class="diamondpics" src="IMAGES/rihanna1.jpg">
+                    
+                        <p id="firstname7">RIAH</p>
+                        
+                        <p id="lastname7">HNA</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond8" class="collagediamonds">
+
+                    <img id="diamondpic8" class="diamondpics" src="IMAGES/scarlett1.jpg">
+                    
+                        <p id="firstname8">SCARLETT</p>
+                        
+                        <p id="lastname8">JOHANNSON</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond9" class="collagediamonds">
+
+                    <img id="diamondpic9" class="diamondpics" src="IMAGES/katy1.jpg">
+                    
+                        <p id="firstname9">KATY</p>
+                        
+                        <p id="lastname9">PERRY</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond10" class="collagediamonds">
+
+                    <img id="diamondpic10" class="diamondpics" src="IMAGES/beiber1.jpg">
+                    
+                        <p id="firstname10">JUSTIN</p>
+                        
+                        <p id="lastname10">BEIBER</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond11" class="collagediamonds">
+
+                    <img id="diamondpic11" class="diamondpics" src="IMAGES/justin1.jpg">
+                    
+                        <p id="firstname11">JUSTIN</p>
+                        
+                        <p id="lastname11">TIMBERLAKE</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond12" class="collagediamonds">
+
+                    <img id="diamondpic12" class="diamondpics" src="IMAGES/brad1.jpg">
+                    
+                        <p id="firstname12">BRAD</p>
+                        
+                        <p id="lastname12">PITT</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+                <div id="diamond13" class="collagediamonds">
+
+                    <img id="diamondpic13" class="diamondpics" src="IMAGES/dwayne1.jpg">
+                    
+                        <p id="firstname13">DWAYNE</p>
+                        
+                        <p id="lastname13">JOHNSON</p>
+                        
+                            <div class="diamondnamebackdrops"></div>
+
+                </div>
+
+            </div>
+            
+            <!-------------------------------------- SIGN UP/LOGIN -------------------------------------->
+            
+            <!------------------ FAN ------------------>
+            
+            <div id="fanlogindiv" class="closed">
+             
+                <img id="fanloginXbutton" src="IMAGES/xbutton.png" onclick="fanLogInClose();">
+              
+                <!----------------- SIGN UP ----------------->
+               
+                <div id="fansignupcontainer" class="fansignup">
+                
+                    <div id="fansignupformdiv">
+                       
+                        <button id="tologinbutton">LOG IN<img id="rightarrowlogin" src="IMAGES/rightarrow.png"></button>
+                        
+                        <h1 id="signupheading">SIGN UP</h1>
+
+                        <input id="firstnamesignup" placeholder="First Name">
+
+                        <input id="lastnamesignup" placeholder="Last Name">
+
+                        <form id="birthdayform">
+
+                            <label id="birthdaytext">BIRTHDAY</label>
+
+                            <input id="birthdayinput" type="date" name="bday">
+
+                        </form>
+                        
+                        <label id="maleradiotext">MALE</label>
+
+                        <input id="maleradiobutton" type="radio" name="gender" value="male" checked>
+                        
+                        <label id="femaleradiotext">FEMALE</label>
+
+                        <input id="femaleradiobutton" type="radio" name="gender" value="female">
+                        
+                        <label id="otherradiotext">OTHER</label>
+
+                        <input id="otherradiobutton" type="radio" name="gender" value="other">
+
+                        <form id="emailform">
+
+                            <label id="emailtext">E-MAIL</label>
+
+                            <input id="emailfield" type="email" name="email" placeholder="Your E-mail">
+
+                        </form>
+
+                        <form id="emailretypeform">
+
+                            <label id="emailretypetext">RE-TYPE EMAIL</label>
+
+                            <input id="emailretypefield" type="email" name="email" placeholder="Re-type Your E-mail">
+
+                        </form>
+                        
+                        <input id="usernameinput" type="text" placeholder="Your User Name">
+                        
+                        <label id="passwordtext1" for="password">PASSWORD</label>
+                        
+                        <input id="passwordinput1" type="password" name="password" minlength="8" required placeholder="Eight Characters Minimum" />
+                        
+                        <label id="passwordtext2" for="password">RE-TYPE PASSWORD</label>
+                        
+                        <input id="passwordinput2" type="password" name="password" minlength="8" required placeholder="Eight Characters Minimum" />
+                        
+                        <input id="skypehandlerinput" type="input" name="skypehandler" minlength="8" required placeholder="Skype Handler" />
+                        
+                        <input id="phonenumberinput" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}-[0-9]{4}" required />
+                        
+                        <button id="signupsubmitbutton" type="submit" onclick="toPayment();">NEXT</button>
+
+                    </div>
+                    
+                    <!-------------- PAYMENT INFO -------------->
+                    
+                    <div id="paymentcontainer" class="creditCardForm">
+                       
+                        <div id="paymentheadingdiv" class="heading">
+                           
+                            <h1 id="paymentheader">PAYMENT INFO</h1>
+                            
+                            <p id="paymenttext">You will not be charged upon submission of this form. You will only be charged if you win any bidding competitions with a celebrity.</p>
+                            
+                        </div>
+                        
+                        <div id="cardinfocontainer" class="payment">
+                           
+                            <form id="cardinfoform">
+                               
+                                <div id="cardnamecontainer" class="form-group owner">
+                                   
+                                    <label id="cardnametext" for="owner">NAME</label>
+                                    
+                                    <input id="cardnameinput" type="text" class="form-control">
+                                    
+                                </div>
+                                
+                                <div id="cvvcontainer" class="form-group CVV">
+                                   
+                                    <label id="cvvtext" for="cvv">CVV</label>
+                                    
+                                    <input id="cvvinput" type="text" class="form-control">
+                                    
+                                </div>
+                                
+                                <div id="cardnumbercontainer" class="form-group">
+                                   
+                                    <label id="cardnumbertext" for="cardNumber">CARD NUMBER</label>
+                                    
+                                    <input id="cardnumberinput" type="text" class="form-control">
+                                    
+                                </div>
+                                
+                                <div id="carddatecontainer" class="form-group">
+                                   
+                                    <label id="expirationtext">EXPIRATION DATE</label>
+                                    
+                                    <select id="expirationselection">
+                                       
+                                        <option class="monthvalues" value="01">January</option>
+                                        
+                                        <option class="monthvalues" value="02">February </option>
+                                        
+                                        <option class="monthvalues" value="03">March</option>
+                                        
+                                        <option class="monthvalues" value="04">April</option>
+                                        
+                                        <option class="monthvalues" value="05">May</option>
+                                        
+                                        <option class="monthvalues" value="06">June</option>
+                                        
+                                        <option class="monthvalues" value="07">July</option>
+                                        
+                                        <option class="monthvalues" value="08">August</option>
+                                        
+                                        <option class="monthvalues" value="09">September</option>
+                                        
+                                        <option class="monthvalues" value="10">October</option>
+                                        
+                                        <option class="monthvalues" value="11">November</option>
+                                        
+                                        <option class="monthvalues" value="12">December</option>
+                                        
+                                    </select>
+                                    
+                                    <select id="yeardateselection">
+                                       
+                                        <option class="yearvalues" value="16"> 2016</option>
+                                        
+                                        <option class="yearvalues" value="17"> 2017</option>
+                                        
+                                        <option class="yearvalues" value="18"> 2018</option>
+                                        
+                                        <option class="yearvalues" value="19"> 2019</option>
+                                        
+                                        <option class="yearvalues" value="20"> 2020</option>
+                                        
+                                        <option class="yearvalues" value="21"> 2021</option>
+                                        
+                                    </select>
+                                    
+                                </div>
+                                
+                                <div id="cardpicturescontainer" class="form-group">
+                                  
+                                    <div id="cardselectorborder" class="imagesborder"></div>
+                                   
+                                    <img id="visaimage" src="IMAGES/visaicon.png">
+                                    
+                                    <img id="mastercardimage" src="IMAGES/mastercardicon.png">
+                                    
+                                    <img id="ameximage" src="IMAGES/amexicon.png">
+                                    
+                                </div>
+                                
+                                <div id="paymentsubmitcontainer" class="form-group">
+                                   
+                                    <a href="fantemplate.html"><button id="paymentsubmitbutton" type="submit" class="btn btn-default" onclick="confirmPayment();">CONFIRM</button></a>
+                                    
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <!----------------- LOG IN ----------------->
+                
+                <div id="fanlogincontainer" class="fansignup">
+                
+                    <div id="fanloginformdiv">
+                        
+                        <button id="tosignupbutton"><img id="leftarrowlogin" src="IMAGES/leftarrow.png">SIGN UP</button>
+
+                        <h1 id="fanloginheading">LOG IN</h1>
+                        
+                            <label id="fanlogintext1" for="password">USER NAME</label>
+
+                            <input id="fanlogininput" type="text" placeholder="User Name">
+
+                            <label id="fanlogintext2" for="password">PASSWORD</label>
+
+                            <input id="fanloginpassword" type="password" name="password" minlength="8" required placeholder="Password" />
+                            
+                                <a href="fantemplate.html"><button id="fanloginbutton">LOG IN</button></a>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <!--------------- CELEBRITY --------------->
+            
+            <div id="celebritylogindiv" class="closed">
+            
+                <img id="celebrityloginXbutton" src="IMAGES/xbutton.png" onclick="celebrityLogInClose();">
+            
+                <div id="celebritylogincontainer">
+
+                    <h1 id="celebrityloginheading">LOG IN</h1>
+                    
+                        <label id="celebritylogintext1" for="password">USER NAME</label>
+
+                        <input id="celebritylogininput" type="text" placeholder="User Name">
+
+                        <label id="celebritylogintext2" for="password">PASSWORD</label>
+
+                        <input id="celebrityloginpassword" type="password" name="password" minlength="8" required placeholder="Password" />
+                        
+                            <a href="celebritytemplate.html"><button id="celebrityloginbutton">LOG IN</button></a>
+
+                </div>
+                
+            </div>
+
+        </div>
+    
+    <!-------------------------------------- ABOUT US -------------------------------------->
+    
+    <!--------------------------------------
+    
+    <div id="aboutusdiv" class="container-fluid">
+        
+        <img id="aboutusbackground" src="IMAGES/desertroad.jpg">
+        
+            <h1 id="aboutusheading">ABOUT US</h1>
+
+            <div id="salmanimagediv">
+                
+                <img id="salmanimage" src="IMAGES/salman.jpg">
+                
+            </div>
+
+            <h2 id="salmanname">SALMAN CHAHMA</h2>
+            
+                <p id="salmantitle">Founder/CEO</p>
+                
+                    <p id="aboutuspar1">We are a company located in Los Angeles, CA. We take great pride in connecting fans all over the world with their favorite celebrities through facetime or skype.</p>
+
+                    <p id="aboutuspar2">KEY STARS is the platform that allows us to connect fans to celebrities through bidding competitions.</p>
+
+                    <p id="aboutuspar3">The way KEY STARS is set up is that once you create an account you can search for your favorite celebrities.</p>
+
+                    <p id="aboutuspar4">Celebrities will set aside an hour of their time to chat with the winning fans through either facetime or skype.</p>
+
+                    <p id="aboutuspar5">Fans will compete with each other in bidding competitions for a five minute block of time with their celebrities.</p>
+
+                    <p id="aboutuspar6">Once the bidding competition is over, the winning fan has 15 minutes to pay the winning bid.</p>
+
+                    <p id="aboutuspar7">If a winning fan fails to pay their winning bid by the end of the fifteen minutes, the next biggest bid has a chance to take over the block of time with the celebrity.</p>
+        
+    </div>
+    
+    -------------------------------------->
+    
+    <!-------------------------------------- CLOSER DIV -------------------------------------->
+    
+    <!--------------------------------------
+    
+    <div id="closerdiv">
+       
+        <p id="careerslink">CAREERS</p>
+        
+        <p id="investorslink">INVESTORS</p>
+        
+        <p id="developerslink">DEVELOPERS</p>
+        
+        <p id="contactuslink">CONTACT US</p>
+        
+        <img id="facebookicon" class="socialmediaicons" src="IMAGES/facebookicon.png">
+        
+        <img id="twittericon" class="socialmediaicons" src="IMAGES/twittericon.png">
+        
+        <img id="instagramicon" class="socialmediaicons" src="IMAGES/instagramicon.png">
+        
+        <img id="pinteresticon" class="socialmediaicons" src="IMAGES/pinteresticon.png">
+        
+    </div>
+    
+    -------------------------------------->
+    
+    <!------------------------------ SCRIPT REFS ------------------------------>
+        
+        <script type="text/javascript" src="script.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        
+        <!---------------------------- OTHER SCRIPT TAGS --------------------------->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    </body>
+
+</html>

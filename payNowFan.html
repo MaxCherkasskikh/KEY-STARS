@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+    <head>
+        
+        <!-------------------------------- META DATA -------------------------------->
+        
+        <title>PAY NOW</title>
+
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable="yes">
+        
+        <!------------------------------- STYLE REFS ------------------------------->
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="aboutUsGeneral.css">
+        
+        <link rel="stylesheet" href="signUpFan.css">
+        
+        <link rel="stylesheet" href="loginFan.css">
+        
+        <link rel="stylesheet" href="loginCelebrity.css">
+        
+        <link rel="stylesheet" href="trendingGeneral.css">
+        
+        <link rel="stylesheet" href="searchGeneral.css">
+        
+        <link rel="stylesheet" href="contactUsGeneral.css">
+        
+        <link rel="stylesheet" href="profileFan.css">
+        
+        <link rel="stylesheet" href="notificationsFan.css">
+        
+        <link rel="stylesheet" href="trendingFan.css">
+        
+        <link rel="stylesheet" href="searchFan.css">
+        
+        <link rel="stylesheet" href="biddingFan.css">
+        
+        <link rel="stylesheet" href="payNowFan.css">
+        
+        <link rel="stylesheet" href="settingsFan.css">
+        
+        <link rel="stylesheet" href="profileCelebrity.css">
+        
+        <link rel="stylesheet" href="notificationsCelebrity.css">
+        
+        <link rel="stylesheet" href="calendarCelebrity.css">
+        
+        <link rel="stylesheet" href="callCelebrity.css">
+        
+        <link rel="stylesheet" href="queriesGENERAL.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!------------------------------ SCRIPT REFS ------------------------------>
+        
+        <script type="text/javascript" src="jquery-3.2.1.js"></script>
+        
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  
+    </head>
+    
+    <!-------------------------------------- BODY -------------------------------------->
+    
+    <body>
+        
+        <!---------------------------------- MENU ----------------------------------------->
+        
+        <div id="menuContainer">
+          
+            <a id="homeLink" href="index.html">
+           
+                <div id="menuLogoContainer">
+
+                    <p id="letterK">K</p>
+
+                    <p id="letterS">S</p>
+
+                </div>
+                
+            </a>
+            
+            <a id="logoutLink" href="index.html">LOG OUT</a>
+            
+            <img id="menuButton" class="closed" src="IMAGES/menubutton.png">
+            
+        </div>
+            
+        <div id="menuLinkContainer" class="closed">
+                
+            <a id="menuLink1" class="closed" href="profileFan.html">PROFILE</a>
+               
+            <a id="menuLink2" class="closed" href="notificationsFan.html">NOTIFICATIONS</a>
+
+            <a id="menuLink3" class="closed" href="trendingFan.html">NOW TRENDING</a>
+
+            <a id="menuLink4" class="closed" href="searchFan.html">SEARCH CELEBRITIES</a>
+
+            <a id="menuLink5" class="closed" href="biddingFan.html">BIDDING COMPETITIONS</a>
+
+            <a id="menuLink6" class="closed" href="payNowFan.html">PAYMENTS</a>
+
+            <a id="menuLink7" class="closed" href="settingsFan.html">SETTINGS</a>
+                
+        </div>
+        
+        <!--------------------------------- HEADER ----------------------------------------->
+     
+        <div id="payNowHeaderDiv">
+            
+            <div id="finalPaymentContainer" class="creditCardForm">
+                       
+                <div id="finalPaymentHeadingDiv" class="heading">
+
+                    <h1 id="finalPaymentHeader">PAYMENT INFO</h1>
+
+                    <p id="finalPaymentText">You will only be charged for any bidding session that you won.</p>
+
+                </div>
+
+                <div id="finalCardInfoContainer" class="payment">
+
+                    <form id="finalCardInfoForm">
+
+                        <div id="finalCardNameContainer" class="form-group owner">
+
+                            <label id="finalCardNameText" for="owner">NAME</label>
+
+                            <input id="finalCardNameInput" type="text" placeholder="Name On Card" class="form-control">
+
+                        </div>
+
+                        <div id="finalCVVContainer" class="form-group CVV">
+
+                            <label id="finalCVVText" for="cvv">CVV NUMBER</label>
+
+                            <input id="finalCVVInput" type="text" placeholder="CVV Number" class="form-control">
+
+                        </div>
+
+                        <div id="finalCardNumberContainer" class="form-group">
+
+                            <label id="finalCardNumberText" for="cardNumber">CARD NUMBER</label>
+
+                            <input id="finalCardNumberInput" type="text" placeholder="Card Number" class="form-control">
+
+                        </div>
+
+                        <div id="finalCardDateContainer" class="form-group">
+
+                            <label id="finalExpirationText">EXPIRATION DATE</label>
+
+                            <select id="finalExpirationSelection">
+
+                                <option class="finalMonthValues" value="01">January</option>
+
+                                <option class="finalMonthValues" value="02">February </option>
+
+                                <option class="finalMonthValues" value="03">March</option>
+
+                                <option class="finalMonthValues" value="04">April</option>
+
+                                <option class="finalMonthValues" value="05">May</option>
+
+                                <option class="finalMonthValues" value="06">June</option>
+
+                                <option class="finalMonthValues" value="07">July</option>
+
+                                <option class="finalMonthValues" value="08">August</option>
+
+                                <option class="finalMonthValues" value="09">September</option>
+
+                                <option class="finalMonthValues" value="10">October</option>
+
+                                <option class="finalMonthValues" value="11">November</option>
+
+                                <option class="finalMonthValues" value="12">December</option>
+
+                            </select>
+
+                            <select id="finalYearDateSelection">
+
+                                <option class="finalYearValues" value="16"> 2016</option>
+
+                                <option class="finalYearValues" value="17"> 2017</option>
+
+                                <option class="finalYearValues" value="18"> 2018</option>
+
+                                <option class="finalYearValues" value="19"> 2019</option>
+
+                                <option class="finalYearValues" value="20"> 2020</option>
+
+                                <option class="finalYearValues" value="21"> 2021</option>
+
+                            </select>
+
+                        </div>
+
+                        <div id="finalCardPicturesContainer" class="form-group">
+
+                            <div id="finalCardSelectorBorder" class="imagesborder"></div>
+
+                            <img id="finalVisaImage" class="none" src="IMAGES/visaicon.png" onclick="cardSelectionVisa();">
+
+                            <img id="finalMasterCardImage" class="none" src="IMAGES/mastercardicon.png" onclick="cardSelectionMasterCard();">
+
+                            <img id="finalAmexImage" class="none" src="IMAGES/amexicon.png" onclick="cardSelectionAmex();">
+
+                        </div>
+
+                        <div id="finalPaymentSubmitContainer" class="form-group">
+
+                            <button id="finalPaymentSubmitButton" type="submit" class="btn btn-default" onclick="confirmPayment();"><a id="fanProfileLink" href="profileFan.html">CONFIRM</a></button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+            
+        </div>
+    
+    <!------------------------------ SCRIPT REFS ------------------------------>
+        
+        <script type="text/javascript" src="script.js"></script>
+        
+        <script type="text/javascript" src="aboutUsGeneral.js"></script>
+        
+        <script type="text/javascript" src="signUpFan.js"></script>
+        
+        <script type="text/javascript" src="loginFan.js"></script>
+        
+        <script type="text/javascript" src="loginCelebrity.js"></script>
+        
+        <script type="text/javascript" src="trendingGeneral.js"></script>
+        
+        <script type="text/javascript" src="searchGeneral.js"></script>
+        
+        <script type="text/javascript" src="contactUsGeneral.js"></script>
+        
+        <script type="text/javascript" src="profileFan.js"></script>
+        
+        <script type="text/javascript" src="trendingFan.js"></script>
+        
+        <script type="text/javascript" src="searchFan.js"></script>
+        
+        <script type="text/javascript" src="biddingFan.js"></script>
+        
+        <script type="text/javascript" src="payNowFan.js"></script>
+        
+        <script type="text/javascript" src="settingsFan.js"></script>
+        
+        <script type="text/javascript" src="profileCelebrity.js"></script>
+        
+        <script type="text/javascript" src="notificationsCelebrity.js"></script>
+        
+        <script type="text/javascript" src="calendarCelebrity.js"></script>
+        
+        <script type="text/javascript" src="callCelebrity.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    </body>
+
+</html>

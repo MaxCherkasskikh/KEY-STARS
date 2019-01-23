@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+    <head>
+        
+        <!-------------------------------- META DATA -------------------------------->
+        
+        <title>CALENDAR</title>
+
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable="yes">
+        
+        <!------------------------------- STYLE REFS ------------------------------->
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="aboutUsGeneral.css">
+        
+        <link rel="stylesheet" href="signUpFan.css">
+        
+        <link rel="stylesheet" href="loginFan.css">
+        
+        <link rel="stylesheet" href="loginCelebrity.css">
+        
+        <link rel="stylesheet" href="trendingGeneral.css">
+        
+        <link rel="stylesheet" href="searchGeneral.css">
+        
+        <link rel="stylesheet" href="contactUsGeneral.css">
+        
+        <link rel="stylesheet" href="profileFan.css">
+        
+        <link rel="stylesheet" href="notificationsFan.css">
+        
+        <link rel="stylesheet" href="trendingFan.css">
+        
+        <link rel="stylesheet" href="searchFan.css">
+        
+        <link rel="stylesheet" href="biddingFan.css">
+        
+        <link rel="stylesheet" href="payNowFan.css">
+        
+        <link rel="stylesheet" href="settingsFan.css">
+        
+        <link rel="stylesheet" href="profileCelebrity.css">
+        
+        <link rel="stylesheet" href="notificationsCelebrity.css">
+        
+        <link rel="stylesheet" href="calendarCelebrity.css">
+        
+        <link rel="stylesheet" href="callCelebrity.css">
+        
+        <link rel="stylesheet" href="queriesGENERAL.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!------------------------------ SCRIPT REFS ------------------------------>
+        
+        <script type="text/javascript" src="jquery-3.2.1.js"></script>
+        
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  
+    </head>
+    
+    <!-------------------------------------- BODY -------------------------------------->
+    
+    <body>
+        
+        <!---------------------------------- MENU ----------------------------------------->
+        
+        <div id="menuContainer">
+          
+            <a id="homeLink" href="index.html">
+           
+                <div id="menuLogoContainer">
+
+                    <p id="letterK">K</p>
+
+                    <p id="letterS">S</p>
+
+                </div>
+                
+            </a>
+            
+            <a id="logoutLink" href="index.html">LOG OUT</a>
+            
+            <img id="menuButton" class="closed" src="IMAGES/menubutton.png">
+            
+        </div>
+            
+        <div id="menuLinkContainer" class="closed">
+                
+            <a id="menuLink1" class="closed" href="profileCelebrity.html">PROFILE</a>
+               
+            <a id="menuLink2" class="closed" href="notificationsCelebrity.html">NOTIFICATIONS</a>
+
+            <a id="menuLink3" class="closed" href="calendarCelebrity.html">CALENDAR</a>
+
+            <a id="menuLink4" class="closed" href="callCelebrity.html">THE CURRENT CALL</a>
+                
+        </div>
+        
+        <!--------------------------------- HEADER ----------------------------------------->
+     
+        <div id="calendarHeaderDiv">
+           
+            <div id="calendarMainContainer"></div>
+            
+                <h1 id="calendarMainHeading">BIDDING CALENDAR</h1>
+
+                <h2 id="monthName">OCTOBER</h2>
+
+                <img id="calendarContainerLeftArrow" src="IMAGES/leftarrow.png" onclick="previousMonth();">
+
+                <img id="calendarContainerRightArrow" src="IMAGES/rightarrow.png" onclick="nextMonth();">
+
+                <div id="weekdayNameContainer">
+
+                    <div id="weekdayNameRow">
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">MONDAY</p>
+
+                        </div>
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">TUESDAY</p>
+
+                        </div>
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">WEDNESDAY</p>
+
+                        </div>
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">THURSDAY</p>
+
+                        </div>
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">FRIDAY</p>
+
+                        </div>
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">SATURDAY</p>
+
+                        </div>
+
+                        <div class="weekdayNameColumns">
+
+                            <p class="weekdayNamePars">SUNDAY</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="calendarContainer" class="container">
+
+                    <div id="currentMonthCalendarContainer">
+
+                        <div id="week1.1row" class="row1-1">
+
+                            <div id="month1col1" class="col-sm">
+
+                                <span class="dateNumbers">1</span>
+
+                            </div>
+
+                            <div id="month1col2" class="col-sm">
+
+                                <span class="dateNumbers">2</span>
+
+                            </div>
+
+                            <div id="month1col3" class="col-sm">
+
+                                <span class="dateNumbers">3</span>
+
+                            </div>
+
+                            <div id="month1col4" class="col-sm">
+
+                                <span class="dateNumbers">4</span>
+
+                            </div>
+
+                            <div id="month1col5" class="col-sm">
+
+                                <span class="dateNumbers">5</span>
+
+                            </div>
+
+                            <div id="month1col6" class="col-sm">
+
+                                <span class="dateNumbers">6</span>
+
+                            </div>
+
+                            <div id="month1col7" class="col-sm">
+
+                                <span class="dateNumbers">7</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week2.1row" class="row2-1">
+
+                            <div id="month1col8" class="col-sm">
+
+                                <span class="dateNumbers">8</span>
+
+                            </div>
+
+                            <div id="month1col9" class="col-sm">
+
+                                <span class="dateNumbers">9</span>
+
+                            </div>
+
+                            <div id="month1col10" class="col-sm">
+
+                                <span class="dateNumbers">10</span>
+
+                            </div>
+
+                            <div id="month1col11" class="col-sm">
+
+                                <span class="dateNumbers">11</span>
+
+                            </div>
+
+                            <div id="month1col12" class="col-sm">
+
+                                <span class="dateNumbers">12</span>
+
+                            </div>
+
+                            <div id="month1col13" class="col-sm">
+
+                                <span class="dateNumbers">13</span>
+
+                            </div>
+
+                            <div id="month1col14" class="col-sm">
+
+                                <span class="dateNumbers">14</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week3.1row" class="row3-1">
+
+                            <div id="month1col15" class="col-sm">
+
+                                <span class="dateNumbers">15</span>
+
+                            </div>
+
+                            <div id="month1col16" class="col-sm">
+
+                                <span class="dateNumbers">16</span>
+
+                            </div>
+
+                            <div id="month1col17" class="col-sm">
+
+                                <span class="dateNumbers">17</span>
+
+                            </div>
+
+                            <div id="month1col18" class="col-sm">
+
+                                <span class="dateNumbers">18</span>
+
+                            </div>
+
+                            <div id="month1col19" class="col-sm">
+
+                                <span class="dateNumbers">19</span>
+
+                            </div>
+
+                            <div id="month1col20" class="col-sm">
+
+                                <span class="dateNumbers">20</span>
+
+                            </div>
+
+                            <div id="month1col21" class="col-sm">
+
+                                <span class="dateNumbers">21</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week4.1row" class="row4-1">
+
+                            <div id="month1col22" class="col-sm">
+
+                                <span class="dateNumbers">22</span>
+
+                            </div>
+
+                            <div id="month1col23" class="col-sm">
+
+                                <span class="dateNumbers">23</span>
+
+                            </div>
+
+                            <div id="month1col24" class="col-sm">
+
+                                <span class="dateNumbers">24</span>
+
+                            </div>
+
+                            <div id="month1col25" class="col-sm">
+
+                                <span class="dateNumbers">25</span>
+
+                            </div>
+
+                            <div id="month1col26" class="col-sm">
+
+                                <span class="dateNumbers">26</span>
+
+                            </div>
+
+                            <div id="month1col27" class="col-sm">
+
+                                <span class="dateNumbers">27</span>
+
+                            </div>
+
+                            <div id="month1col28" class="col-sm">
+
+                                <span class="dateNumbers">28</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week5.1row" class="row5-1">
+
+                            <div id="month1col29" class="col-sm">
+
+                                <span class="dateNumbers">29</span>
+
+                            </div>
+
+                            <div id="month1col30" class="col-sm">
+
+                                <span class="dateNumbers">30</span>
+
+                            </div>
+
+                            <div id="month1col31" class="col-sm">
+
+                                <span class="dateNumbers">31</span>
+
+                            </div>
+
+                            <div id="month1col32" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month1col33" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month1col34" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month1col35" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="nextMonthCalendarContainer">
+
+                        <div id="week1.2row" class="row1-2">
+
+                            <div id="month2col1" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month2col2" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month2col3" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month2col4" class="col-sm">
+
+                                <span class="dateNumbers">1</span>
+
+                            </div>
+
+                            <div id="month2col5" class="col-sm">
+                                <span class="dateNumbers">2</span>
+
+
+                            </div>
+
+                            <div id="month2col6" class="col-sm">
+
+                                <span class="dateNumbers">3</span>
+
+                            </div>
+
+                            <div id="month2col7" class="col-sm">
+
+                                <span class="dateNumbers">4</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week2.2row" class="row2-2">
+
+                            <div id="month2col8" class="col-sm">
+
+                                <span class="dateNumbers">5</span>
+
+                            </div>
+
+                            <div id="month2col9" class="col-sm">
+
+                                <span class="dateNumbers">6</span>
+
+                            </div>
+
+                            <div id="month2col10" class="col-sm">
+
+                                <span class="dateNumbers">7</span>
+
+                            </div>
+
+                            <div id="month2col11" class="col-sm">
+
+                                <span class="dateNumbers">8</span>
+
+                            </div>
+
+                            <div id="month2col12" class="col-sm">
+
+                                <span class="dateNumbers">9</span>
+
+                            </div>
+
+                            <div id="month2col13" class="col-sm">
+
+                                <span class="dateNumbers">10</span>
+
+                            </div>
+
+                            <div id="month2col14" class="col-sm">
+
+                                <span class="dateNumbers">11</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week3.2row" class="row3-2">
+
+                            <div id="month2col15" class="col-sm">
+
+                                <span class="dateNumbers">12</span>
+
+                            </div>
+
+                            <div id="month2col16" class="col-sm">
+
+                                <span class="dateNumbers">13</span>
+
+                            </div>
+
+                            <div id="month2col17" class="col-sm">
+
+                                <span class="dateNumbers">14</span>
+
+                            </div>
+
+                            <div id="month2col18" class="col-sm">
+
+                                <span class="dateNumbers">15</span>
+
+                            </div>
+
+                            <div id="month2col19" class="col-sm">
+
+                                <span class="dateNumbers">16</span>
+
+                            </div>
+
+                            <div id="month2col20" class="col-sm">
+
+                                <span class="dateNumbers">17</span>
+
+                            </div>
+
+                            <div id="month2col21" class="col-sm">
+
+                                <span class="dateNumbers">18</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week4.2row" class="row4-2">
+
+                            <div id="month2col22" class="col-sm">
+
+                                <span class="dateNumbers">19</span>
+
+                            </div>
+
+                            <div id="month2col23" class="col-sm">
+
+                                <span class="dateNumbers">20</span>
+
+                            </div>
+
+                            <div id="month2col24" class="col-sm">
+
+                                <span class="dateNumbers">21</span>
+
+                            </div>
+
+                            <div id="month2col25" class="col-sm">
+
+                                <span class="dateNumbers">22</span>
+
+                            </div>
+
+                            <div id="month2col26" class="col-sm">
+
+                                <span class="dateNumbers">23</span>
+
+                            </div>
+
+                            <div id="month2col27" class="col-sm">
+
+                                <span class="dateNumbers">24</span>
+
+                            </div>
+
+                            <div id="month2col28" class="col-sm">
+
+                                <span class="dateNumbers">25</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="week5.2row" class="row5-2">
+
+                            <div id="month2col29" class="col-sm">
+
+                                <span class="dateNumbers">26</span>
+
+                            </div>
+
+                            <div id="month2col30" class="col-sm">
+
+                                <span class="dateNumbers">27</span>
+
+                            </div>
+
+                            <div id="month2col31" class="col-sm">
+
+                                <span class="dateNumbers">28</span>
+
+                            </div>
+
+                            <div id="month2col32" class="col-sm">
+
+                                <span class="dateNumbers">29</span>
+
+                            </div>
+
+                            <div id="month2col33" class="col-sm">
+
+                                <span class="dateNumbers">30</span>
+
+                            </div>
+
+                            <div id="month2col34" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                            <div id="month2col35" class="col-sm">
+
+                                <span class="dateNumbers"></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    
+    <!------------------------------ SCRIPT REFS ------------------------------>
+        
+        <script type="text/javascript" src="script.js"></script>
+        
+        <script type="text/javascript" src="aboutUsGeneral.js"></script>
+        
+        <script type="text/javascript" src="signUpFan.js"></script>
+        
+        <script type="text/javascript" src="loginFan.js"></script>
+        
+        <script type="text/javascript" src="loginCelebrity.js"></script>
+        
+        <script type="text/javascript" src="trendingGeneral.js"></script>
+        
+        <script type="text/javascript" src="searchGeneral.js"></script>
+        
+        <script type="text/javascript" src="contactUsGeneral.js"></script>
+        
+        <script type="text/javascript" src="profileFan.js"></script>
+        
+        <script type="text/javascript" src="trendingFan.js"></script>
+        
+        <script type="text/javascript" src="searchFan.js"></script>
+        
+        <script type="text/javascript" src="biddingFan.js"></script>
+        
+        <script type="text/javascript" src="payNowFan.js"></script>
+        
+        <script type="text/javascript" src="settingsFan.js"></script>
+        
+        <script type="text/javascript" src="profileCelebrity.js"></script>
+        
+        <script type="text/javascript" src="notificationsCelebrity.js"></script>
+        
+        <script type="text/javascript" src="calendarCelebrity.js"></script>
+        
+        <script type="text/javascript" src="callCelebrity.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    </body>
+
+</html>

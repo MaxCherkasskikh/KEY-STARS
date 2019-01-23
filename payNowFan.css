@@ -1,0 +1,333 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#payNowHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#finalPaymentContainer {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+    z-index: 100;
+}
+
+#finalPaymentHeadingDiv {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+}
+
+#finalPaymentHeader {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 0%;
+    font-size: 1.7rem;
+    text-align: center;
+    background: none;
+}
+
+#finalPaymentText {
+    position: absolute;
+    top: 36%;
+    left: 0%;
+    text-align: center;
+    background: none;
+}
+
+#finalCardInfoContainer {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 18%;
+    left: 0%;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid magenta;
+}
+
+#finalCardInfoForm {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: none;
+}
+
+#finalCardNameContainer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#finalCardNameText {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 30%;
+    left: 0%;
+    padding-top: 5px;
+    padding-right: 3%;
+    text-align: right;
+    background: none;
+}
+
+#finalCardNameInput {
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    top: 30%;
+    left: 40%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#finalCVVContainer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 15%;
+    left: 0%;
+    background: none;
+}
+
+#finalCVVText {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 30%;
+    left: 0%;
+    padding-top: 5px;
+    padding-right: 3%;
+    text-align: right;
+    background: none;
+}
+
+#finalCVVInput {
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    top: 30%;
+    left: 40%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#finalCardNumberContainer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 30%;
+    left: 0%;
+    background: none;
+}
+
+#finalCardNumberText {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 30%;
+    left: 0%;
+    padding-top: 5px;
+    padding-right: 3%;
+    text-align: right;
+    background: none;
+}
+
+#finalCardNumberInput {
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    top: 30%;
+    left: 40%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#finalCardDateContainer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 45%;
+    left: 0%;
+}
+
+#finalExpirationText {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 30%;
+    left: 0%;
+    padding-top: 5px;
+    padding-right: 3%;
+    text-align: right;
+}
+
+#finalExpirationSelection {
+    position: absolute;
+    height: 40%;
+    width: 24%;
+    top: 30%;
+    left: 40%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.finalMonthValues {
+    position: absolute;
+    height: %;
+    width: %;
+    top: %;
+    left: %;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    
+    display: none;
+}
+
+#finalYearDateSelection {
+    position: absolute;
+    height: 40%;
+    width: 24%;
+    top: 30%;
+    left: 66%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+.finalYearValues {
+    position: absolute;
+    height: %;
+    width: %;
+    top: %;
+    left: %;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    
+    display: none;
+}
+
+#finalCardPicturesContainer {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    top: 60%;
+    left: 0%;
+    background: none;
+}
+
+#finalCardSelectorBorder {
+    position: absolute;
+    height: 64%;
+    width: 30%;
+    top: 18%;
+    left: 35%;
+    border-top: 0.02px solid magenta;
+    border-bottom: 0.02px solid magenta;
+    transform: scale(0);
+}
+
+#finalCardSelectorBorder.none {
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+#finalCardSelectorBorder.visa {
+    left: 3%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#finalCardSelectorBorder.mastercard {
+    left: 35%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#finalCardSelectorBorder.amex {
+    left: 67%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#finalVisaImage {
+    position: absolute;
+    height: 80%;
+    width: 28%;
+    top: 10%;
+    left: 4%;
+    background: none;
+}
+
+#finalMasterCardImage {
+    position: absolute;
+    height: 80%;
+    width: 28%;
+    top: 10%;
+    left: 36%;
+    background: none;
+}
+
+#finalAmexImage {
+    position: absolute;
+    height: 80%;
+    width: 28%;
+    top: 10%;
+    left: 68%;
+    background: none;
+}
+
+#finalPaymentSubmitContainer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 85%;
+    left: 0%;
+    background: none;
+}
+
+#finalPaymentSubmitButton {
+    position: absolute;
+    height: 60%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#fanProfileLink {
+    color: magenta;
+}
+
+#finalPaymentSubmitButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* -------------------- THE END ---------------------- */

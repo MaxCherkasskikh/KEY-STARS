@@ -1,0 +1,264 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#signUpHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(IMAGES/newyork.jpg);
+    background-size: 400%;
+    background-position: 40%;
+    overflow: hidden;
+}
+
+#fanSignUpContainer {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 500;
+}
+
+#fanSignUpFormDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#signUpHeading {
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    top: 6%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#nameForm {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 15%;
+}
+
+#firstNameSignUp {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 2.5%;
+    font-size: 0.8rem;
+    background: none;
+    border: 0.5px solid magenta;
+    border-radius: 10px;
+}
+
+#lastNameSignUp {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 52.5%;
+    font-size: 0.8rem;
+    background: none;
+    border: 0.5px solid magenta;
+    border-radius: 10px;
+}
+
+#birthdayForm {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 25%;
+}
+
+#birthdaySignupText {
+    position: absolute;
+    top: 37%;
+    left: 15%;
+    font-size: 1rem;
+}
+
+#birthdayInput {
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    top: 25%;
+    left: 37.2%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#sexForm {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 35%;
+}
+
+#maleRadioText {
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: none;
+}
+
+#maleRadioButton {
+    position: absolute;
+    height: 20%;
+    top: 40%;
+    left: 35%;
+    border-radius: 10px;
+    background: none;
+}
+
+#femaleRadioText {
+    position: absolute;
+    top: 32%;
+    left: 60%;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: none;
+}
+
+#femaleRadioButton {
+    position: absolute;
+    height: 20%;
+    top: 40%;
+    left: 83%;
+    border-radius: 10px;
+    background: none;
+}
+
+#emailForm {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 45%;
+}
+
+#emailField {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 2.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#emailRetypeField {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 52.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#userNameInput {
+    position: absolute;
+    height: 5%;
+    width: 94.8%;
+    top: 57.5%;
+    left: 2.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#passwordForm {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 65%;
+}
+
+#passwordInput1 {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 2.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#passwordInput2 {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 52.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#otherStuffForm {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 75%;
+}
+
+#skypeHandlerInput {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 2.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#phoneNumberInput {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    top: 25%;
+    left: 52.5%;
+    font-size: 0.8rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#signUpSubmitButton {
+    position: absolute;
+    height: 6%;
+    width: 30%;
+    top: 88%;
+    left: 35%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1rem;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#signUpSubmitButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* -------------------- THE END ---------------------- */

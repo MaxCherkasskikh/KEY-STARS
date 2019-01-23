@@ -1,0 +1,89 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#celebrityLoginHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(IMAGES/newyork.jpg);
+    background-size: 400%;
+    background-position: 40%;
+    overflow: hidden;
+}
+
+#celebrityLoginContainer {
+    position: absolute;
+    height: 50%;
+    width: 90%;
+    top: 25%;
+    left: 5%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 500;
+}
+
+#celebrityLoginFormDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#celebrityLoginHeading {
+    position: absolute;
+    width: 100%;
+    top: 6%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#celebrityLoginUserNameInput {
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#celebrityLoginUserPasswordInput {
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    top: 45%;
+    left: 10%;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#celebrityLoginButton {
+    position: absolute;
+    height: 10%;
+    width: 30%;
+    top: 65%;
+    left: 35%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#celebrityLoginButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+#celebrityForgotLoginInfoText {
+    position: absolute;
+    top: 83%;
+    left: 15%;
+    font-size: 1rem;
+}
+
+/* -------------------- THE END ---------------------- */

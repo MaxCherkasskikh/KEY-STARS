@@ -1,0 +1,1049 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#celebrityProfileHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#celebrityProfileContainer {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+}
+
+#celebrityProfileHeading {
+    position: absolute;
+    width: 70%;
+    top: -1%;
+    left: 30%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#celebrityImageDiv {
+    position: absolute;
+    height: 16%;
+    width: 25%;
+    top: 1%;
+    left: 6%;
+    overflow: hidden;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#celebrityImage {
+    position: absolute;
+    height: 150%;
+    top: -1%;
+    left: -8%;
+    border: 1px solid magenta;
+}
+
+#celebrityImageDivBorder {
+    position: absolute;
+    height: 17.7%;
+    width: 27%;
+    top: 0%;
+    left: 5.1%;
+    background: magenta;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0, 50% 1%, 1% 26%, 1% 74%, 50% 99%, 99% 74%, 99% 26%, 50% 1%);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0, 50% 1%, 1% 26%, 1% 74%, 50% 99%, 99% 74%, 99% 26%, 50% 1%);
+}
+
+#celebrityName {
+    position: absolute;
+    width: 50%;
+    top: 6%;
+    left: 40%;
+    font-size: 1.7rem;
+    border: 1px solid magenta;
+    border-radius: 3px;
+}
+
+#toSeeCallInfoDiv {
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    top: 27%;
+    left: 10%;
+    border: 1px solid magenta;
+}
+
+    #toSeeCallInfoDiv.infoOpen {
+        position: absolute;
+        height: 10%;
+        width: 80%;
+        top: 27%;
+        left: 10%;
+        border: 1px solid magenta;
+        transform: rotateY(90deg);
+        transition: 0.4s;
+        transform-origin: center;
+    }
+
+    #toSeeCallInfoDiv.infoClosed {
+        position: absolute;
+        height: 10%;
+        width: 80%;
+        top: 27%;
+        left: 10%;
+        border: 1px solid magenta;
+        transform: rotateY(0deg);
+        transition: 0.4s;
+        transform-origin: center;
+        transition-delay: 0.5s;
+    }
+
+#toSeeCallText {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding-top: 1px;
+    font-size: 1.2rem;
+}
+
+#timeInfoDiv {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 19%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+    #timeInfoDiv.infoOpen {
+        position: absolute;
+        height: 30%;
+        width: 100%;
+        top: 19%;
+        left: 0%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        transform: rotateY(0deg);
+        transition: 0.4s;
+        transform-origin: center;
+        transition-delay: 0.5s;
+    }
+
+    #timeInfoDiv.infoClosed {
+        position: absolute;
+        height: 30%;
+        width: 100%;
+        top: 19%;
+        left: 0%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        transform: rotateY(90deg);
+        transition: 0.4s;
+        transform-origin: center;
+    }
+
+#currentCall {
+    position: absolute;
+    width: %;
+    top: 3%;
+    left: 45%;
+    font-size: 1.5rem;
+    
+    border-bottom: 1px solid magenta;
+}
+
+#fanCallerImageDiv {
+    position: absolute;
+    height: 60%;
+    width: 32%;
+    top: 4%;
+    left: 4%;
+    border: 1px solid magenta;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#fanCallerImage {
+    position: absolute;
+    height: 180%;
+    top: -2%;
+    left: -4%;
+}
+
+#fanName {
+    position: absolute;
+    width: 40%;
+    top: 63%;
+    left: 0%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#dateHeading {
+    position: absolute;
+    height: 15%;
+    width: 40%;
+    top: 23%;
+    left: 23%;
+    padding-top: 3px;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+#datePar {
+    position: absolute;
+    height: 15%;
+    width: 40%;
+    top: 23%;
+    left: 65%;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#timeHeading {
+    position: absolute;
+    height: 15%;
+    width: 40%;
+    top: 40.6%;
+    left: 23%;
+    padding-top: 3px;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+#timePar {
+    position: absolute;
+    height: 15%;
+    width: 40%;
+    top: 40.6%;
+    left: 65%;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#durationHeading {
+    position: absolute;
+    height: 15%;
+    width: 40%;
+    top: 57%;
+    left: 23%;
+    padding-top: 3px;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+#durationPar {
+    position: absolute;
+    height: 15%;
+    width: 40%;
+    top: 57%;
+    left: 65%;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#VIDEOCALLutton {
+    position: absolute;
+    height: 18%;
+    width: 40%;
+    top: 75%;
+    left: 5%;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#CANCELbutton {
+    position: absolute;
+    height: 18%;
+    width: 40%;
+    top: 75%;
+    left: 55%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#timeBlocksDiv {
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    top: 50%;
+    left: 20%;
+    overflow: hidden;
+    border-left: 1px solid magenta;
+    border-right: 1px solid magenta;
+}
+
+#block1 {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: 0%;
+    left: 5%;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid magenta;
+}
+
+    #time1-1button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 3%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time2-1button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 19%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time3-1button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time4-1button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 51%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time5-1button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 67%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time6-1button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 83%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+#block2 {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: 0%;
+    left: 5%;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid magenta;
+}
+
+    #time1-2button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 3%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time2-2button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 19%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time3-2button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time4-2button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 51%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time5-2button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 67%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time6-2button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 83%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+#block3 {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: 0%;
+    left: 5%;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid magenta;
+}
+
+    #time1-3button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 3%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time2-3button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 19%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time3-3button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time4-3button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 51%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time5-3button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 67%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #time6-3button {
+        position: absolute;
+        height: 14%;
+        width: 80%;
+        top: 83%;
+        left: 10%;
+        text-shadow: 1px 1px 3px white;
+        font-size: ;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid magenta;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+#time1-1button.buttonoff1 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time2-1button.buttonoff2 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time3-1button.buttonoff3 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time4-1button.buttonoff4 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time5-1button.buttonoff5 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time6-1button.buttonoff6 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time1-2button.buttonoff7 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time2-2button.buttonoff8 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time3-2button.buttonoff9 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time4-2button.buttonoff10 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time5-2button.buttonoff11 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time6-2button.buttonoff12 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time1-3button.buttonoff13 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time2-3button.buttonoff14 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time3-3button.buttonoff15 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time4-3button.buttonoff16 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time5-3button.buttonoff17 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#time6-3button.buttonoff18 {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#Xbutton1 {
+    position: absolute;
+    height: 8%;
+    top: 6%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton2 {
+    position: absolute;
+    height: 8%;
+    top: 22%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton3 {
+    position: absolute;
+    height: 8%;
+    top: 38%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton4 {
+    position: absolute;
+    height: 8%;
+    top: 54.5%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton5 {
+    position: absolute;
+    height: 8%;
+    top: 70%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton6 {
+    position: absolute;
+    height: 8%;
+    top: 86%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton7 {
+    position: absolute;
+    height: 8%;
+    top: 6%;
+    left: 82.71%;
+    z-index: 1;
+}
+
+#Xbutton8 {
+    position: absolute;
+    height: 8%;
+    top: 22%;
+    left: 82.7%;
+    z-index: 1;
+}
+
+#Xbutton9 {
+    position: absolute;
+    height: 8%;
+    top: 38%;
+    left: 82.71%;
+    z-index: 1;
+}
+
+#Xbutton10 {
+    position: absolute;
+    height: 8%;
+    top: 54.5%;
+    left: 82.71%;
+    z-index: 1;
+}
+
+#Xbutton11 {
+    position: absolute;
+    height: 8%;
+    top: 70%;
+    left: 82.71%;
+    z-index: 1;
+}
+
+#Xbutton12 {
+    position: absolute;
+    height: 8%;
+    top: 86%;
+    left: 82.71%;
+    z-index: 1;
+}
+
+#Xbutton13 {
+    position: absolute;
+    height: 8%;
+    top: 6%;
+    left: 82.9%;
+    z-index: 1;
+}
+
+#Xbutton14 {
+    position: absolute;
+    height: 8%;
+    top: 22%;
+    left: 82.9%;
+    z-index: 1;
+}
+
+#Xbutton15 {
+    position: absolute;
+    height: 8%;
+    top: 38%;
+    left: 82.9%;
+    z-index: 1;
+}
+
+#Xbutton16 {
+    position: absolute;
+    height: 8%;
+    top: 54.5%;
+    left: 82.9%;
+    z-index: 1;
+}
+
+#Xbutton17 {
+    position: absolute;
+    height: 8%;
+    top: 70%;
+    left: 82.9%;
+    z-index: 1;
+}
+
+#Xbutton18 {
+    position: absolute;
+    height: 8%;
+    top: 86%;
+    left: 82.9%;
+    z-index: 1;
+}
+
+
+
+#Xbutton1.on1 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton2.on2 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton3.on3 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton4.on4 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton5.on5 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton6.on6 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton7.on7 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton8.on8 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton9.on9 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton10.on10 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton11.on11 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton12.on12 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton13.on13 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton14.on14 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton15.on15 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton16.on16 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton17.on17 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton18.on18 {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+#Xbutton1.off1 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton2.off2 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton3.off3 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton4.off4 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton5.off5 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton6.off6 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton7.off7 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton8.off8 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton9.off9 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton10.off10 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton11.off11 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton12.off12 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton13.off13 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton14.off14 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton15.off15 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton16.off16 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton17.off17 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#Xbutton18.off18 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+#timeBlockLeftButton {
+    position: absolute;
+    height: 10%;
+    top: 68%;
+    left: 0%;
+}
+
+#timeBlockRightButton {
+    position: absolute;
+    height: 10%;
+    top: 68%;
+    left: 82%;
+}
+
+#block1.position1 {
+    left: 5%;
+    transition: 0.8s;
+}
+
+#block2.position1 {
+    left: 105%;
+    transition: 0.8s;
+}
+
+#block3.position1 {
+    left: 105%;
+    transition: 0.8s;
+}
+
+#block1.position2 {
+    left: -105%;
+    transition: 0.8s;
+}
+
+#block2.position2 {
+    left: 5%;
+    transition: 0.8s;
+}
+
+#block3.position2 {
+    left: 105%;
+    transition: 0.8s;
+}
+
+#block1.position3 {
+    left: -105%;
+    transition: 0.8s;
+}
+
+#block2.position3 {
+    left: -105%;
+    transition: 0.8s;
+}
+
+#block3.position3 {
+    left: 5%;
+    transition: 0.8s;
+}
+
+#time1-1button.on1 {
+    
+}
+
+/* -------------------- THE END ---------------------- */

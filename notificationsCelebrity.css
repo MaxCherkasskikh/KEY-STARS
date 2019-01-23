@@ -1,0 +1,42 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#notificationsHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#notificationsMainHeader {
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    left: 0%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#notificationsContainer {
+    position: absolute;
+    height: 86%;
+    width: 90%;
+    top: 11.5%;
+    left: 5%;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid magenta;
+}
+
+.notificationPars {
+    height: 5%;
+    width: 100%;
+    margin-top: 7.7%;
+    left: 0%;
+    padding-top: 1.8%;
+    padding-left: 1%;
+    border-left: 1px solid magenta;
+    border-right: 1px solid magenta;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0.7rem;
+}
+
+/* -------------------- THE END ---------------------- */

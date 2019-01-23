@@ -1,0 +1,106 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#settingsHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#settingsContainer {
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    top: 21%;
+    left: 10%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+}
+
+#settingsHeader {
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    left: 0%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#changeEmailText {
+    position: absolute;
+    width: 45%;
+    top: 25%;
+    left: 0%;
+    text-align: right;
+    font-size: 1rem;
+}
+
+#changeEmailInput {
+    position: absolute;
+    height: 7%;
+    width: 50%;
+    top: 24.2%;
+    left: 47%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#changePasswordText {
+    position: absolute;
+    width: 45%;
+    top: 40%;
+    left: 0%;
+    text-align: right;
+    font-size: 1rem;
+}
+
+#changePasswordInput {
+    position: absolute;
+    height: 7%;
+    width: 50%;
+    top: 39.3%;
+    left: 47%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#settingsSubmitButton {
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    top: 54%;
+    left: 25%;
+    padding-top: 4px;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#changeCardInfoText {
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 15%;
+    font-size: 1rem;
+}
+
+#changeCardInfoButton {
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    top: 81%;
+    left: 25%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* -------------------- THE END ---------------------- */

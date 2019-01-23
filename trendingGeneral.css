@@ -1,0 +1,342 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#trendingHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#searchDiv {
+    position: absolute;
+    height: 15%;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+}
+
+#searchText {
+    position: absolute;
+    width: 40%;
+    top: 12%;
+    left: 12%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#searchInput {
+    position: absolute;
+    height: 30%;
+    width: 55%;
+    top: 10%;
+    left: 40%;
+    border: 1px solid magenta;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#followingPeopleButton {
+    position: absolute;
+    height: 30%;
+    width: 40%;
+    top: 57%;
+    left: 5%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#suggestedPeopleButton {
+    position: absolute;
+    height: 30%;
+    width: 40%;
+    top: 57%;
+    left: 55%;
+    text-shadow: 1px 1px 3px white;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#followingDiv.followingPosition {
+    left: 0%;
+    transition: 0.8s;
+}
+
+#suggestedDiv.followingPosition {
+    left: 100%;
+    transition: 0.8s;
+}
+
+#followingDiv.suggestedPosition {
+    left: -100%;
+    transition: 0.8s;
+}
+
+#suggestedDiv.suggestedPosition {
+    left: 0%;
+    transition: 0.8s;
+}
+
+#pageContainer {
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    top: 23%;
+    left: 5%;
+    overflow: hidden;
+}
+
+#followingDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+    #followingDiv1 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 15%;
+        left: 4%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #followingImage1 {
+            position: absolute;
+            height: 140%;
+            left: -1%;
+        }
+
+            #followingUserName1 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+    #followingDiv2 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 15%;
+        left: 52%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #followingImage2 {
+            position: absolute;
+            height: 130%;
+            left: -10%;
+        }
+
+            #followingUserName2 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+    #followingDiv3 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 55%;
+        left: 4%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #followingImage3 {
+            position: absolute;
+            height: 140%;
+            top: -18%;
+            left: -2%;
+        }
+
+            #followingUserName3 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+    #followingDiv4 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 55%;
+        left: 52%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #followingImage4 {
+            position: absolute;
+            height: 150%;
+            top: -30%;
+            left: -2%;
+            overflow: hidden;
+        }
+
+            #followingUserName4 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+#suggestedDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 100%;
+}
+
+    #suggestedDiv1 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 15%;
+        left: 4%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #suggestedImage1 {
+            position: absolute;
+            height: 140%;
+            top: -5%;
+            left: 0%;
+        }
+
+            #suggestedUserName1 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+    #suggestedDiv2 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 15%;
+        left: 52%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #suggestedImage2 {
+            position: absolute;
+            height: 150%;
+            top: -18%;
+            left: -1%;
+        }
+
+            #suggestedUserName2 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+    #suggestedDiv3 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 55%;
+        left: 4%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #suggestedImage3 {
+            position: absolute;
+            height: 140%;
+            top: -18%;
+            left: -2%;
+        }
+
+            #suggestedUserName3 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+    #suggestedDiv4 {
+        position: absolute;
+        height: 30%;
+        width: 42%;
+        top: 55%;
+        left: 52%;
+        overflow: hidden;
+        border: 5px double magenta;
+        border-radius: 100%;
+    }
+
+        #suggestedImage4 {
+            position: absolute;
+            height: 150%;
+            top: -6%;
+            left: -0%;
+        }
+
+            #suggestedUserName4 {
+                position: absolute;
+                height: 230%;
+                width: 100%;
+                top: 72%;
+                left: 0%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+/* -------------------- THE END ---------------------- */

@@ -1,0 +1,2272 @@
+/* -------------------- GENERAL ---------------------- */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@font-face { 
+    font-family: Exodar; 
+    src: url('Exodar-Outline.ttf'); 
+} 
+
+div {
+    
+}
+
+a:link{
+    text-decoration: none!important;
+}
+
+li {
+    text-decoration: none!important;
+}
+
+li:link {
+    text-decoration: none!important;
+}
+
+textarea::-webkit-input-placeholder {
+    color: white;
+}
+
+textarea:-moz-placeholder {
+    color: white;
+}
+
+textarea::-moz-placeholder {
+    color: white;
+}
+
+textarea:-ms-input-placeholder {
+    color: white;
+}
+
+input {
+    color: white;
+    text-indent: 15px;
+}
+
+input::-webkit-input-placeholder {
+    color: white !important;
+    text-indent: 15px;
+}
+ 
+input:-moz-placeholder {
+    color: white !important;
+    text-indent: 15px;
+}
+ 
+input::-moz-placeholder {
+    color: white !important;
+    text-indent: 15px;
+}
+ 
+input:-ms-input-placeholder {  
+    color: white !important;
+    text-indent: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px white;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 3px black;
+}
+
+.slower {
+    transition: 5s;
+    transition-delay: 1s;
+}
+
+.animated {
+    transition: 5s;
+    transition-delay: 1s;
+}
+
+/* ---------------------- LINES ------------------------ */
+
+#line1 {
+    position: absolute;
+    height: 220vh;
+    width: 0.3vw;
+    margin-left: 4vw;
+    border: 1px solid magenta;
+    border-top: none;
+    border-bottom: none;
+    z-index: 100;
+    
+    display: none;
+}
+
+#line2 {
+    position: absolute;
+    height: 220vh;
+    width: 0.3vw;
+    margin-left: 95.7vw;
+    border: 1px solid magenta;
+    border-top: none;
+    border-bottom: none;
+    z-index: 100;
+    
+    display: none;
+}
+
+#line3 {
+    position: absolute;
+    height: 0.5vh;
+    width: 100vw;
+    margin-top: 5.8vh;
+    border: 1px solid magenta;
+    border-left: none;
+    border-right: none;
+    z-index: 100;
+}
+
+#line4 {
+    position: absolute;
+    height: 0.5vh;
+    width: 100vw;
+    margin-top: 200vh;
+    border: 1px solid magenta;
+    border-left: none;
+    border-right: none;
+    z-index: 100;
+    
+    display: none;
+}
+
+#line5 {
+    position: absolute;
+    height: 0.3vh;
+    width: 19.8vw;
+    margin-top: 68vh;
+    border: 1px solid magenta;
+    border-left: none;
+    z-index: 100;
+}
+
+#line6 {
+    position: absolute;
+    height: 0.3vh;
+    width: 20vw;
+    margin-top: 68vh;
+    margin-left: 80vw;
+    border: 1px solid magenta;
+    border-right: none;
+    z-index: 100;
+}
+
+/* ------------------- MENU --------------------- */
+
+.toggle-btn {
+    position: absolute;;
+    height: 12px;
+    width: 40px;
+    margin: 1em;
+    right: 0;
+    padding: 1em;
+    z-index: 500;
+}
+ 
+span.one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    margin-top: -7px;
+    margin-left: -17px;
+    background: magenta;
+    box-shadow: 2px 2px 4px black;
+}
+ 
+span.two {
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: -17px;
+    background: magenta;
+    box-shadow: 2px 2px 4px black;
+}
+ 
+.menu {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+    background: rgba(5, 5, 5, 0.8);
+    text-decoration: none!important;
+    z-index: 490;
+}
+ 
+.data {
+    padding: 4em 0 3em 3em;
+    text-align: left;
+    text-decoration: none!important;
+}
+ 
+li:first-child {
+    height: 70px;
+    width: 20vw;
+    padding-left: 10px;
+    color: magenta;
+    font-size: 35px;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+ 
+li:not(:first-child) {
+    height: 70px;
+    width: 20vw;
+    margin-top: 5px;
+    padding-left: 10px;
+    color: magenta;
+    font-size: 35px;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+
+.menulinks {
+    background: none!important;
+    border: transparent!important;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    text-decoration: none;
+}
+
+.noDecoration, a:link, a:visited {
+    text-decoration: none!important;
+}
+
+/* -------------------- HEADER DIV ---------------------- */
+
+#headerdiv {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#headerbackground {
+    position: absolute;
+    height: 100vh;
+    width: 102vw;
+    margin-left: -2vw;
+}
+
+#headerprimaryheading {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 8vw;
+    color: magenta;
+    font-size: 100px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+#headersecondaryheading {
+    position: absolute;
+    width: 38vw;
+    margin-top: 22vh;
+    margin-left: 31.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 1;
+}
+
+#secondaryheadingbackdrop {
+    position: absolute;
+    height: 4vh;
+    width: 100vw;
+    margin-top: 22vh;
+    margin-left: 0vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+#fanbutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 33vh;
+    margin-left: 31.5vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#fanbutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+#celebritybutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 33vh;
+    margin-left: 58.3vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#celebritybutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+#celebritysearchbutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 92vh;
+    margin-left: 45vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#celebritysearchbutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+#diamondcollage {
+    position: absolute;
+    height: 46.7vh;
+    width: 60.4vw;
+    margin-top: 45vh;
+    margin-left: 19.8vw;
+}
+
+.collagediamonds {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    margin-top: vh;
+    margin-left: vw;
+    -webkit-clip-path: polygon(50% 0, 52% 1%, 99% 48%, 100% 50%, 99% 52%, 52% 99%, 50% 100%, 48% 99%, 1% 52%, 0 50%, 1% 48%, 48% 1%);
+    clip-path: polygon(50% 0, 52% 1%, 99% 48%, 100% 50%, 99% 52%, 52% 99%, 50% 100%, 48% 99%, 1% 52%, 0 50%, 1% 48%, 48% 1%);
+}
+
+.diamondpics {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: vh;
+    margin-left: vw;
+}
+
+.diamondpics:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+#diamond1 {
+    position: absolute;
+    margin-left: 6.1vw;
+}
+
+    #diamondpic1 {
+        position: absolute;
+        height: 30vh;
+        width: 14vw;
+        margin-top: vh;
+        margin-left: -1.5vw;
+    }
+
+#diamond2 {
+    position: absolute;
+    margin-left: 18.3vw;
+}
+
+    #diamondpic2 {
+        position: absolute;
+        height: 35vh;
+        width: vw;
+        margin-top: vh;
+        margin-left: -0.5vw;
+    }
+
+#diamond3 {
+    position: absolute;
+    margin-left: 30.5vw;
+}
+
+    #diamondpic3 {
+        position: absolute;
+        height: 37vh;
+        width: vw;
+        margin-top: -3vh;
+        margin-left: -0.8vw;
+    }
+
+#diamond4 {
+    position: absolute;
+    margin-left: 42.7vw;
+}
+
+    #diamondpic4 {
+        position: absolute;
+        height: 38vh;
+        width: vw;
+        margin-top: vh;
+        margin-left: -1.5vw;
+    }
+
+#diamond5 {
+    position: absolute;
+    margin-top: 11.9vh;
+}
+
+    #diamondpic5 {
+        position: absolute;
+        height: 32vh;
+        width: vw;
+        margin-top: -5vh;
+        margin-left: vw;
+    }
+
+#diamond6 {
+    position: absolute;
+    margin-top: 11.9vh;
+    margin-left: 12.2vw;
+}
+
+    #diamondpic6 {
+        position: absolute;
+        height: 33vh;
+        width: vw;
+        margin-top: vh;
+        margin-left: -4vw;
+    }
+
+#diamond7 {
+    position: absolute;
+    margin-top: 11.9vh;
+    margin-left: 24.4vw;
+}
+
+    #diamondpic7 {
+        position: absolute;
+        height: 34vh;
+        width: vw;
+        margin-top: vh;
+        margin-left: -0.3vw;
+    }
+
+#diamond8 {
+    position: absolute;
+    margin-top: 11.9vh;
+    margin-left: 36.6vw;
+}
+
+    #diamondpic8 {
+        position: absolute;
+        height: 33vh;
+        width: vw;
+        margin-top: -3vh;
+        margin-left: -0.7vw;
+    }
+
+#diamond9 {
+    position: absolute;
+    margin-top: 11.9vh;
+    margin-left: 48.8vw;
+}
+
+    #diamondpic9 {
+        position: absolute;
+        height: 40vh;
+        width: 13vw;
+        margin-top: vh;
+        margin-left: -0.4vw;
+    }
+
+#diamond10 {
+    position: absolute;
+    margin-top: 24vh;
+    margin-left: 6.1vw;
+}
+
+    #diamondpic10 {
+        position: absolute;
+        height: 42vh;
+        width: vw;
+        margin-top: vh;
+        margin-left: -0.8vw;
+    }
+
+#diamond11 {
+    position: absolute;
+    margin-top: 24vh;
+    margin-left: 18.3vw;
+}
+
+    #diamondpic11 {
+        position: absolute;
+        height: 37vh;
+        width: 16vw;
+        margin-top: vh;
+        margin-left: vw;
+    }
+
+#diamond12 {
+    position: absolute;
+    margin-top: 24vh;
+    margin-left: 30.5vw;
+}
+
+    #diamondpic12 {
+        position: absolute;
+        height: 31vh;
+        width: 12vw;
+        margin-top: vh;
+        margin-left: vw;
+    }
+
+#diamond13 {
+    position: absolute;
+    margin-top: 24vh;
+    margin-left: 42.7vw;
+}
+
+    #diamondpic13 {
+        position: absolute;
+        height: 29vh;
+        width: vw;
+        margin-top: -0.5vh;
+        margin-left: vw;
+    }
+
+/* -------------------- NAMES ---------------------- */
+
+#firstname1 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname1 {
+        margin-left: 1.3vw;
+        transition: 0.8s;
+    }
+
+#lastname1 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname1 {
+        margin-left: 4.2vw;
+        transition: 0.8s;
+    }
+
+#firstname2 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname2 {
+        margin-left: 1.4vw;
+        transition: 0.8s;
+    }
+
+#lastname2 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname2 {
+        margin-left: 6vw;
+        transition: 0.8s;
+    }
+
+#firstname3 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname3 {
+        margin-left: 0.7vw;
+        transition: 0.8s;
+    }
+
+#lastname3 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname3 {
+        margin-left: 4.4vw;
+        transition: 0.8s;
+    }
+
+#firstname4 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname4 {
+        margin-left: 1.1vw;
+        transition: 0.8s;
+    }
+
+#lastname4 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname4 {
+        margin-left: 7.2vw;
+        transition: 0.8s;
+    }
+
+#firstname5 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname5 {
+        margin-left: 1.5vw;
+        transition: 0.8s;
+    }
+
+#lastname5 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname5 {
+        margin-left: 7vw;
+        transition: 0.8s;
+    }
+
+#firstname6 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname6 {
+        margin-left: 1.6vw;
+        transition: 0.8s;
+    }
+
+#lastname6 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname6 {
+        margin-left: 6.2vw;
+        transition: 0.8s;
+    }
+
+#firstname7 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname7 {
+        margin-left: 3.5vw;
+        transition: 0.8s;
+    }
+
+#lastname7 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname7 {
+        margin-left: 5.75vw;
+        transition: 0.8s;
+    }
+
+#firstname8 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname8 {
+        margin-left: 0.3vw;
+        transition: 0.8s;
+    }
+
+#lastname8 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname8 {
+        margin-left: 5.1vw;
+        transition: 0.8s;
+    }
+
+#firstname9 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname9 {
+        margin-left: 3vw;
+        transition: 0.8s;
+    }
+
+#lastname9 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname9 {
+        margin-left: 6vw;
+        transition: 0.8s;
+    }
+
+#firstname10 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname10 {
+        margin-left: 2vw;
+        transition: 0.8s;
+    }
+
+#lastname10 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname10 {
+        margin-left: 6.2vw;
+        transition: 0.8s;
+    }
+
+#firstname11 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname11 {
+        margin-left: 0.8vw;
+        transition: 0.8s;
+    }
+
+#lastname11 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname11 {
+        margin-left: 4.8vw;
+        transition: 0.8s;
+    }
+
+#firstname12 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname12 {
+        margin-left: 3vw;
+        transition: 0.8s;
+    }
+
+#lastname12 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname12 {
+        margin-left: 7vw;
+        transition: 0.8s;
+    }
+
+#firstname13 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: -6vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #firstname13 {
+        margin-left: 1vw;
+        transition: 0.8s;
+    }
+
+#lastname13 {
+    position: absolute;
+    margin-top: 9.6vh;
+    margin-left: 12vw;
+    color: magenta;
+    font-size: 23px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 2;
+}
+
+    .collagediamonds:hover #lastname13 {
+        margin-left: 5.7vw;
+        transition: 0.8s;
+    }
+
+.diamondnamebackdrops {
+    position: absolute;
+    height: 2.5vh;
+    width: 12vw;
+    margin-top: -3vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.collagediamonds:hover .diamondnamebackdrops {
+    margin-top: 10vh;
+    transition: 0.8s;
+}
+
+/* ------------------- LOGIN DIVS --------------------- */
+
+/* ---------------------- FAN ------------------------ */
+
+#fanlogindiv {
+    position: absolute;
+    height: 680px;
+    width: 680px;
+    margin-top: 15vh;
+    margin-left: 32.3vw;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    transform: rotate(45deg) scale(0);
+    background: rgba(0, 0, 0, 0.9);
+    transition-delay: 2s;
+    overflow: hidden;
+    z-index: 500;
+}
+
+#fanloginXbutton {
+    position: absolute;
+    height: 3vh;
+    margin-top: 0.6vh;
+    margin-left: 0.3vw;
+    transform: rotate(-45deg);
+    z-index: 100;
+}
+
+#tologinbutton {
+    position: absolute;
+    height: 5.7vh;
+    margin-top: 46.1vh;
+    margin-left: 39vw;
+    padding-top: 0.5vh;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: magenta;
+    text-shadow: none;
+}
+
+#rightarrowlogin {
+    height: 5vh;
+    margin-top: -0.5vh;
+    margin-left: 1vw;
+}
+
+#fanlogindiv.open {
+    transform: rotate(45deg) scale(1);
+    transition: 2s;
+    transition-delay: 2s;
+    transition-duration: 3.5s;
+}
+
+#fanlogindiv.closed {
+    transform: rotate(45deg) scale(0);
+    transition: 2s;
+    transition-delay: 0s;
+    transition-duration: 3.5s;
+}
+
+/* -------------------- SIGN UP ---------------------- */
+
+#fansignupcontainer {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.2vh;
+    margin-left: -7.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+    transform: rotate(-45deg);
+}
+
+#fansignupcontainer.fansignup {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.21vh;
+    margin-left: -7.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+    transform: rotate(-45deg);
+    transition: 1s;
+}
+
+#fansignupcontainer.fanlogin {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.21vh;
+    margin-left: -70vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+    transform: rotate(-45deg);
+    transition: 1s;
+}
+
+#fansignupformdiv {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: vh;
+    margin-left: vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#signupheading {
+    position: absolute;
+    margin-top: 16vh;
+    margin-left: 21.4vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#firstnamesignup {
+    position: absolute;
+    margin-top: 24.2vh;
+    margin-left: 15vw;
+    padding-top: 4px;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 0.5px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#lastnamesignup {
+    position: absolute;
+    margin-top: 24.2vh;
+    margin-left: 25.7vw;
+    padding-top: 4px;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 0.5px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#birthdayform {
+    position: absolute;
+    height: 3vh;
+    width: 19.8vw;
+    margin-top: 29vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#birthdaytext {
+    position: absolute;
+    margin-top: 0.6vh;
+    margin-left: 0vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#birthdayinput {
+    position: absolute;
+    height: vh;
+    width: 9.05vw;
+    margin-top: vh;
+    margin-left: 10.8vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#maleradiotext {
+    position: absolute;
+    margin-top: 34.1vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#maleradiobutton {
+    position: absolute;
+    height: 5vh;
+    margin-top: 32.8vh;
+    margin-left: 17.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#femaleradiotext {
+    position: absolute;
+    margin-top: 34.1vh;
+    margin-left: 22vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#femaleradiobutton {
+    position: absolute;
+    height: 5vh;
+    margin-top: 32.8vh;
+    margin-left: 26.3vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#otherradiotext {
+    position: absolute;
+    margin-top: 34.1vh;
+    margin-left: 30.6vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#otherradiobutton {
+    position: absolute;
+    height: 5vh;
+    margin-top: 32.8vh;
+    margin-left: 34.1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#emailform {
+    position: absolute;
+    height: 3vh;
+    width: 20vw;
+    margin-top: 38vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#emailtext {
+    position: absolute;
+    height: 3vh;
+    width: 15vw;
+    margin-top: 0.3vh;
+    margin-left: 0vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#emailfield {
+    position: absolute;
+    margin-left: 10.8vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#emailretypeform {
+    position: absolute;
+    height: 3vh;
+    width: 20vw;
+    margin-top: 42.9vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#emailretypetext {
+    position: absolute;
+    height: 3vh;
+    width: 15vw;
+    margin-top: 0.3vh;
+    margin-left: 0vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#emailretypefield {
+    position: absolute;
+    height: 3vh;
+    margin-left: 10.8vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#usernameinput {
+    position: absolute;
+    height: 3vh;
+    width: 20vw;
+    margin-top: 48vh;
+    margin-left: 14.8vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#passwordtext1 {
+    position: absolute;
+    margin-top: 53.5vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#passwordinput1 {
+    position: absolute;
+    width: 10.4vw;
+    margin-top: 53vh;
+    margin-left: 24.4vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#passwordtext2 {
+    position: absolute;
+    margin-top: 58.5vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#passwordinput2 {
+    position: absolute;
+    width: 10.4vw;
+    margin-top: 58vh;
+    margin-left: 24.4vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#skypehandlerinput {
+    position: absolute;
+    width: 19.9vw;
+    margin-top: 63vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#phonenumberinput {
+    position: absolute;
+    width: 19.9vw;
+    margin-top: 68vh;
+    margin-left: 14.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#signupsubmitbutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 78vh;
+    margin-left: 20vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#signupsubmitbutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* ----------------- PAYMENT INFO ------------------- */
+
+#paymentcontainer {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    transform: scale(0);
+    z-index: 100;
+}
+
+#paymentheadingdiv {
+    position: absolute;
+    height: 15vh;
+    width: 25vw;
+    margin-top: 20vh;
+    margin-left: 12.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#paymentheader {
+    position: absolute;
+    height: vh;
+    width: 14vw;
+    margin-top: 1vh;
+    margin-left: 6.1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#paymenttext {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: 8vh;
+    margin-left: vw;
+    color: magenta;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cardinfocontainer {
+    position: absolute;
+    height: 36vh;
+    width: 28vw;
+    margin-top: 35vh;
+    margin-left: 10.85vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#cardinfoform {
+    position: absolute;
+    height: 36vh;
+    width: 28vw;
+    margin-top: vh;
+    margin-left: vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10px;
+    background: none;
+}
+
+#cardnamecontainer {
+    position: absolute;
+    height: 6vh;
+    width: 26.8vw;
+    margin-top: 2vh;
+    margin-left: 0.3vw;
+}
+
+#cardnametext {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: -0.1vh;
+    margin-left: 1.1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cardnameinput {
+    position: absolute;
+    height: 3vh;
+    width: 25.2vw;
+    margin-top: 2.2vh;
+    margin-left: 1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#cvvcontainer {
+    position: absolute;
+    height: 6vh;
+    width: 4.6vw;
+    margin-top: 13vh;
+    margin-left: 22.4vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cvvtext {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: -0.1vh;
+    margin-left: 1.1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cvvinput {
+    position: absolute;
+    height: 3vh;
+    width: 3vw;
+    margin-top: 2.2vh;
+    margin-left: 1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#cardnumbercontainer {
+    position: absolute;
+    height: 6vh;
+    width: 17.2vw;
+    margin-top: 13vh;
+    margin-left: 0.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cardnumbertext {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: -0.1vh;
+    margin-left: 1.1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cardnumberinput {
+    position: absolute;
+    height: 3vh;
+    width: 15vw;
+    margin-top: 2.2vh;
+    margin-left: 1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#carddatecontainer {
+    position: absolute;
+    height: 6vh;
+    width: 11vw;
+    margin-top: 25vh;
+    margin-left: 0.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+#expirationtext {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: -0.1vh;
+    margin-left: 1.1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#expirationselection {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: 2.2vh;
+    margin-left: 1vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.monthvalues {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: vh;
+    margin-left: vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#yeardateselection {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: 2.2vh;
+    margin-left: 7vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+.yearvalues {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: vh;
+    margin-left: vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#cardpicturescontainer {
+    position: absolute;
+    height: 6.4vh;
+    width: 14.6vw;
+    margin-top: 25.3vh;
+    margin-left: 11.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#cardselectorborder {
+    position: absolute;
+    height: 7vh;
+    width: 4.5vw;
+    margin-top: -0.3vw;
+    margin-left: 0vw;
+    border-top: 0.02px solid magenta;
+    border-bottom: 0.02px solid magenta;
+    transform: scale(0);
+}
+
+#cardselectorborder.visa {
+    transform: scale(1);
+    visibility: visible;
+    transition: 0.5s;
+}
+
+#cardselectorborder.mastercard {
+    transform: scale(1);
+    margin-left: 5vw;
+    transition: 0.5s;
+}
+
+#cardselectorborder.amex {
+    transform: scale(1);
+    margin-left: 10vw;
+    transition: 0.5s;
+}
+
+#visaimage {
+    position: absolute;
+    height: vh;
+    width: 4.5vw;
+    margin-top: -1.5vh;
+    margin-left: vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#mastercardimage {
+    position: absolute;
+    height: vh;
+    width: 4.5vw;
+    margin-top: -1.5vh;
+    margin-left: 5vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#ameximage {
+    position: absolute;
+    height: 8.3vh;
+    width: 4.5vw;
+    margin-top: -1.3vh;
+    margin-left: 10vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#paymentsubmitcontainer {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 41vh;
+    margin-left: 8.9vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#paymentsubmitbutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: vh;
+    margin-left: 0.1vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#paymentsubmitbutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* -------------------- LOG IN ---------------------- */
+
+#fanlogincontainer {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.2vh;
+    margin-left: 60vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+#fanlogincontainer.fansignup {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.21vh;
+    margin-left: 60vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    transform: rotate(-45deg);
+    transition: 1s;
+    z-index: 1;
+}
+
+#fanlogincontainer.fanlogin {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.21vh;
+    margin-left: -7.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    transform: rotate(-45deg);
+    transition: 1s;
+    z-index: 1;
+}
+
+#fanloginformdiv {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: vh;
+    margin-left: vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    z-index: 1;
+}
+
+#tosignupbutton {
+    height: 5.2vh;
+    margin-top: 46.2vh;
+    margin-left: 0.7vw;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: magenta;
+    text-shadow: none;
+}
+
+#leftarrowlogin {
+    height: 5vh;
+    margin-top: -0.1vh;
+    margin-right: 1vw;
+}
+
+#fansignupformdiv.fanlogin {
+    margin-left: -100vw;
+    transition: 1s;
+}
+
+#fanloginformdiv.fanlogin {
+    margin-left: 0vw;
+}
+
+#fanloginheading {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 20.6vw;
+    color: magenta;
+    font-size: 60px;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#fanlogintext1 {
+    position: absolute;
+    margin-top: 40vh;
+    margin-left: 13vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#fanlogininput {
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    margin-top: 39.6vh;
+    margin-left: 22vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#fanlogintext2 {
+    position: absolute;
+    margin-top: 52vh;
+    margin-left: 13vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#fanloginpassword {
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    margin-top: 51.6vh;
+    margin-left: 22vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#fanloginbutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 70vh;
+    margin-left: 20vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#fanloginbutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* -------------------- CELEBRITY ---------------------- */
+
+#celebritylogindiv {
+    position: absolute;
+    height: 680px;
+    width: 680px;
+    margin-top: 15vh;
+    margin-left: 32.3vw;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    transform: rotate(45deg) scale(0);
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 500;
+}
+
+#celebrityloginXbutton {
+    position: absolute;
+    height: 3vh;
+    margin-top: 0.6vh;
+    margin-left: 0.3vw;
+    transform: rotate(-45deg);
+    z-index: 100;
+}
+
+#celebritylogindiv.open {
+    transform: rotate(45deg) scale(1);
+    transition: 2s;
+    transition-delay: 2s;
+    transition-duration: 3.5s;
+}
+
+#celebritylogindiv.closed {
+    transform: rotate(45deg) scale(0);
+    transition: 2s;
+    transition-delay: 0s;
+    transition-duration: 3.5s;
+}
+
+/* -------------------- LOG IN ---------------------- */
+
+#celebritylogincontainer {
+    position: absolute;
+    height: 955px;
+    width: 955px;
+    margin-top: -14.2vh;
+    margin-left: -7.2vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+#celebrityloginheading {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 20.6vw;
+    color: magenta;
+    font-size: 60px;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#celebritylogintext1 {
+    position: absolute;
+    margin-top: 40vh;
+    margin-left: 13vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#celebritylogininput {
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    margin-top: 39.6vh;
+    margin-left: 22vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#celebritylogintext2 {
+    position: absolute;
+    margin-top: 52vh;
+    margin-left: 13vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    background: none;
+}
+
+#celebrityloginpassword {
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    margin-top: 51.6vh;
+    margin-left: 22vw;
+    color: magenta;
+    font-family: 'Rajdhani', sans-serif;
+    border: 1px solid magenta;
+    border-radius: 10px;
+    background: none;
+}
+
+#celebrityloginbutton {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 70vh;
+    margin-left: 20vw;
+    color: magenta;
+    text-shadow: 1px 1px 3px white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid magenta;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#celebrityloginbutton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* -------------------- ABOUT US ---------------------- */
+
+#aboutusdiv {
+    position: absolute;
+    height: 120vh;
+    margin-top: 100vh;
+    margin-left: vw;
+    z-index: 1;
+}
+
+#aboutusbackground {
+    position: absolute;
+    height: 120vh;
+    width: 101vw;
+    margin-left: -1vw;
+}
+
+#aboutusheading {
+    position: absolute;
+    height: vh;
+    width: vw;
+    margin-top: 10vh;
+    margin-left: 53vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    text-shadow: 1.5px 1.5px 2px white;
+}
+
+#salmanimagediv {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 6px double magenta;
+    z-index: 10;
+}
+
+#salmanimage {
+    position: absolute;
+    height: 24vh;
+    width: vw;
+    margin-top: -0.3vh;
+    margin-left: -0.6vw;
+}
+
+#salmanname {
+    position: absolute;
+    margin-top: 34vh;
+    margin-left: 8vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#salmantitle {
+    position: absolute;
+    margin-top: 40vh;
+    margin-left: 11vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 30px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar1 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 25vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar2 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 33vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar3 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 41vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar4 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 49vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar5 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 57.5vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar6 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 66vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#aboutuspar7 {
+    position: absolute;
+    height: vh;
+    width: 50vw;
+    margin-top: 72vh;
+    margin-left: 33vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: magenta;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+/* ------------------- CLOSER DIV --------------------- */
+
+#closerdiv {
+    position: absolute;
+    height: 20vh;
+    width: 100vw;
+    margin-top: 200vh;
+    z-index: 1;
+}
+
+#careerslink {
+    position: absolute;
+    margin-top: 7.5vh;
+    margin-left: 14vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#investorslink {
+    position: absolute;
+    margin-top: 7.5vh;
+    margin-left: 25.5vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#developerslink {
+    position: absolute;
+    margin-top: 7.5vh;
+    margin-left: 38vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#contactuslink {
+    position: absolute;
+    margin-top: 7.5vh;
+    margin-left: 51vw;
+    color: magenta;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.socialmediaicons {
+    position: absolute;
+    height: 5vh;
+}
+
+#facebookicon {
+    margin-top: 8vh;
+    margin-left: 70vw;
+}
+
+#twittericon {
+    margin-top: 8vh;
+    margin-left: 75vw;
+}
+
+#instagramicon {
+    margin-top: 8vh;
+    margin-left: 80vw;
+}
+
+#pinteresticon {
+    margin-top: 8vh;
+    margin-left: 85vw;
+}
+
+/* -------------------- THE END ---------------------- */

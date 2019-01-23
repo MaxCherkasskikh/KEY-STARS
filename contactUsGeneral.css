@@ -1,0 +1,98 @@
+/* -------------------- HEADER DIV ---------------------- */
+
+#contactUsHeaderDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+}
+
+#contactUsHeading {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+}
+
+#contactUsDiv {
+    position: absolute;
+    height: 50%;
+    width: 90%;
+    top: 30%;
+    left: 5%;
+    z-index: 1;
+}
+
+#careeUsLink {
+    position: absolute;
+    width: 50%;
+    top: 0%;
+    left: 0%;
+    color: magenta;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#investoUsLink {
+    position: absolute;
+    width: 50%;
+    top: 0%;
+    left: 50%;
+    color: magenta;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#developeUsLink {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 0%;
+    color: magenta;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contactUsLink {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 50%;
+    color: magenta;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#socialMediaIconDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.socialMediaIcons {
+    position: absolute;
+    height: 20%;
+}
+
+#facebookIcon {
+    top: 40%;
+    left: 15%;
+}
+
+#twitterIcon {
+    top: 40%;
+    left: 65%;
+}
+
+#instagramIcon {
+    top: 70%;
+    left: 15%;
+}
+
+#pinterestIcon {
+    top: 70%;
+    left: 65%;
+}
+
+/* -------------------- THE END ---------------------- */
